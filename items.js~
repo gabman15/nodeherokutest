@@ -1,0 +1,4 @@
+exports.priceModule = {
+    get_price : function(item) {
+	if(item=='fries
+    

@@ -1,0 +1,11 @@
+var http = require("http");
+var url = require("url");
+
+http.createServer(function (request, response) {
+	response.writeHead(200, {'Content-Type' : 'text/html'});
+	response.write("Gabriel McNinch<br>");
+	response.write("Arlington MA<br>");
+	var qobj = url.parse(request.url,true).query;
+	//response.write(qobj);
+	response.end("Works");
+}).listen(8080);
